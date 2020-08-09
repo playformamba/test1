@@ -1,0 +1,741 @@
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			#header {
+				width: 1224px;
+				height: 56px;
+				margin-top: 23px;
+				margin-left: 62px;
+				position: relative;/*使用绝对定位*/
+			}
+
+			.mi {
+				float: left;
+			}
+
+			.nav {
+				width: 695px;
+				height: 56px;
+				margin-left: 234px;
+				position: absolute;
+				top: 0;
+			}
+
+
+			.index {
+				border: none;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.nav>ul>li {/*按照父子关系才能对所做目标做样式*/
+				height: 56px;
+				list-style: none;
+				padding-left: 20px;
+				float: left;
+			}
+
+			.nav>ul>li>a {
+				display: block;
+				height: 56px;
+				text-decoration: none;
+				font-family: "microsoft yahei";
+				font-size: 16px;
+				color: black;
+				line-height: 56px;
+			}
+
+			.nav>ul>li>a:hover {
+				color: orangered;
+			}
+
+			#box {
+				width: 1224px;
+				height: 463px;
+				margin: 62px;
+				position: relative;
+			}
+
+			#box>ul {
+				font-family: "microsoft yahei";
+				position: absolute;
+				background: #0D260D;
+				width: 234px;
+				height: 463px;
+				left: 0;
+				top: 0;
+			}
+
+			#box>ul>li {
+				width: 234px;
+				height: 46px;
+				list-style: none;
+			}
+
+			#box>ul>li>a {
+				width: 100%;
+				height: 42px;
+				display: block;
+				padding-top: 10px;
+				text-decoration: none;
+			}
+
+			#box>ul>li>a span {
+				line-height: 21px;
+				color: white;
+				font-size: 17px;
+				text-indent: 29px;
+				float: left;
+			}
+
+			#box>ul>li>a b {
+				font-size: 24px;
+				float: right;
+				color: white;
+				line-height: 21px;
+				padding-right: 15px;
+			}
+
+			#box>ul>li>div {
+				width: 900px;
+				height: 463px;
+				position: absolute;
+				left: 234px;
+				top: 0;
+				display: none;
+			}
+
+			#box>ul>li:hover {/*使用父子关系对对象进行修饰*/
+				background: #FF4500;
+			}
+
+			#box>ul>li:hover>div {
+				display: block;
+				background: white;
+			}
+
+			.list {
+				width: 200px;
+				height: 460px;
+				background: #ADFF2F;
+
+			}
+
+			.list>ul {
+				width: 300px;
+				float: left;
+			}
+
+			.list>ul>li {
+				list-style: none;
+				position: relative;
+				padding: 15px;
+
+			}
+
+			.list>ul>li>a {
+				text-decoration: none;
+			}
+
+			.list>ul>li>a>span {
+				color: black;
+				font-family: "microsoft yahei";
+				font-size: 13px;
+				position: absolute;
+				left: 95px;
+				top: 40px;
+			}
+
+			.list>ul>li>a>span:hover {
+				color: #FF4500;
+			}
+
+			#box1 {
+				background: #ADFF2F;
+				position: absolute;
+				left: 1300px;
+				top: 142px;
+				width: 250px;
+				height: 460px;
+			}
+
+			#box1:hover {
+				cursor: pointer;
+				box-shadow: 0px 5px 5px blueviolet;
+				transform: translate(0, -5px) scale(1.005);
+				transition: 1s;
+			}
+
+			.box2 {
+				font-size: 20px;
+				width: 1552px;
+				height: 200px;
+				margin-top: 30px;
+				position: relative;
+			}
+
+			.box2>ul {
+				float: left;
+				margin-top: 50px;
+				padding-left: 100px;
+
+			}
+
+			.box2>ul>li {
+				padding-top: 10px;
+				list-style: none;
+			}
+
+			.box2>ul>li>span:hover {
+				color: orangered;
+				cursor: pointer;
+			}
+
+			.box2>ul>li>span {
+				font-family: "microsoft yahei";
+				font-size: 18px;
+				color: black;
+			}
+
+			.box3 {
+				width: 1px;
+				height: 130px;
+				margin-top: 50px;
+				background: dimgray;
+				font-size: 10px;
+				position: absolute;
+				right: 300px;
+			}
+
+			.box4 {
+				position: absolute;
+				right: 0;
+				bottom: 0px;
+				width: 280px;
+				height: 150px;
+				text-align: center;
+				line-height: 35px;
+				font-size: 15px;
+			}
+
+			.box4>span1 {
+				color: orangered;
+			}
+
+			.box4>span2 {
+				display: block;
+				width: 140px;
+				height: 40px;
+				margin-left: 70px;
+				color: orangered;
+				border: 1px solid orangered;
+			}
+
+			#box5 {
+				width: 1224px;
+				height: 240x;
+				position: relative;
+				margin-left: 65px;
+			}
+
+			p {
+				margin-top: 30px;
+				font-size: 25px;
+				font-family: "microsoft yahei";
+			}
+
+			#box6 {
+				width: 1450px;
+				height: 700px;
+				background: gainsboro;
+				margin-top: 20px;
+				position: relative;
+			}
+
+			#A {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				text-align: center;
+			}
+
+			#A:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#F {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				top: 350px;
+				left: 0;
+				text-align: center;
+			}
+
+			#F:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#B {
+				width: 255px;
+				height: 340px;
+				background: white;
+				margin-left: 285px;
+				margin-top: 0;
+				text-align: center;
+			}
+
+			#B:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#G {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 285px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#G:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;/*盒子阴影*/
+				transform: translate(0, -3px) scale(1.002);/*放大*/
+				transition: 0.1s;/*定义时间*/
+			}
+
+			#C {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 570px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#C:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#H {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 570px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#H:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#D {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 855px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#D:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#I {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 855px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#I:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#E {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 1140px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#E:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#J {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				left: 1140px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#J:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#box9 {
+				width: 1490px;
+				height: 240px;
+				background: red;
+				margin-top: 40px;
+			}
+
+			#box7 {
+				width: 1450px;
+				height: 700px;
+				background: gainsboro;
+				margin-top: px;
+				position: relative;
+			}
+
+			#K {
+				width: 255px;
+				height: 690px;
+				background: white;
+				position: absolute;
+				text-align: center;
+			}
+
+			#K:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.3s;
+			}
+
+			#M {
+				width: 255px;
+				height: 340px;
+				background: white;
+				position: absolute;
+				left: 285px;
+				top: 0;
+				text-align: center;
+			}
+
+			#M:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#N {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 285px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#N:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#O {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 570px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#O:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#P {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 570px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#P:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#Q {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 855px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#Q:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#R {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 855px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#R:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#S {
+				width: 255px;
+				height: 340px;
+				position: absolute;
+				background: white;
+				left: 1140px;
+				top: 0px;
+				text-align: center;
+			}
+
+			#S:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#T {
+				width: 255px;
+				height: 340px;
+				background: white;
+				position: absolute;
+				left: 1140px;
+				top: 350px;
+				text-align: center;
+			}
+
+			#T:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 2px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#box8 {
+				width: 1450px;
+				height: 430px;
+				background: ghostwhite;
+				margin-top: 40px;
+				margin-left: 60px;
+				position: relative;
+			}
+
+			#a {
+				width: 347px;
+				height: 430px;
+				border: 1px solid #696969;
+			}
+
+			#b {
+				width: 347px;
+				height: 430px;
+				position: absolute;
+				top: 0px;
+				left: 367px;
+				border: 1px solid #696969;
+			}
+
+			#c {
+				width: 347px;
+				height: 430px;
+				position: absolute;
+				top: 0px;
+				left: 734px;
+				border: 1px solid #696969;
+			}
+
+			#d {
+				width: 347px;
+				height: 430px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				border: 1px solid #696969;
+			}
+
+			#a:hover {
+				cursor: pointer;
+				box-shadow: 5px 5px 10px gray;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#b:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#c:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#d:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#box10 {
+				width: 1450px;
+				height: 350px;
+				background: slategray;
+				;
+				margin-top: 40px;
+				margin-left: 60px;
+				position: relative;
+			}
+
+			#box10>div>p {
+				font-size: 20px;
+				font-family: "microsoft yahei";
+				text-align: center;
+			}
+
+			#box10>div>p:hover {
+				color: orange;
+			}
+
+			#e {
+				width: 347px;
+				height: 350px;
+				background: lightgray;
+				position: absolute;
+				text-align: center;
+				top: 0px;
+			}
+
+			#e:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s
+			}
+
+			#f {
+				width: 347px;
+				height: 350px;
+				background: lightgray;
+				position: absolute;
+				top: 0px;
+				left: 367px;
+			}
+
+			#f:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s;
+			}
+
+			#g {
+				width: 347px;
+				height: 350px;
+				background: lightgray;
+				;
+				position: absolute;
+				top: 0px;
+				left: 734px;
+			}
+
+			#g:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s
+			}
+
+			#h {
+				width: 347px;
+				height: 350px;
+				background: lightgray;
+				;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+
+			#h:hover {
+				cursor: pointer;
+				box-shadow: 0px 0px 5px;
+				transform: translate(0, -3px) scale(1.002);
+				transition: 0.1s
+			}

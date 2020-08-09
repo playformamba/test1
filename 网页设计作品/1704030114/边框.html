@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div {
+				width: 200px;
+				height: 100px;
+				background: gray;
+				margin: 50px;
+				border: 5px solid red;
+				border-radius: 20px;
+				cursor: wait;
+			}
+
+			p {
+				border: 2px dashed red;
+			}
+
+			b {
+				border-bottom: 3px dotted green;
+				border-right: 6px solid purple;
+			}
+
+			#box2 {
+				height: 200px;
+				border-radius: 50%;
+				/*溢出处理*/
+				overflow: hidden;
+				cursor: move;
+			}
+
+			#box3 {
+				border-top-left-radius: 80px;
+				border-bottom-right-radius: 100px;
+				backgroung: green;
+				background-size: cover;
+				/*盒子阴影*/
+				box-shadow: 8px 8px 5px gray;
+			}
+
+			#box3:hover {
+				/*透明度*/
+				opacity: 0.7;
+				/*鼠标形状*/
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>AAAAAAAAAA</p>
+			<b>BBBBBBBBBB</b>
+		</div>
+		<div id="box2">
+			<p>CCCCCCCCCC</p>
+		</div>
+		<div id="box3"></div>
+	</body>
+</html>
